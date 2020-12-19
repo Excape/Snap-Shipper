@@ -1,10 +1,10 @@
 {
   "name": "Snap-Shipper",
   "version": "0.0.1rc0",
-  "image": "hbdk/snap-shipper",
+  "image": "excape/snap-shipper",
   "slug": "snapshipper",
   "description": "Ship those snapshots",
-  "url": "https://github.com/HBDK/Snap-Shipper",
+  "url": "https://github.com/excape/Snap-Shipper",
   "arch": ["armv7", "aarch64", "amd64", "i386"],
   "startup": "once",
   "boot": "manual",
@@ -20,7 +20,16 @@
                 "webdav_login":    "some-user",
                 "webdav_password": "the password"
             }
-        }
+        },
+        {
+            "Name": "AWS",
+            "S3Client": {
+                "endpoint_url": "https://s3.eu-west-1.amazonaws.com",
+                "aws_access_key": "<your access key>",
+                "aws_secret_access_key": "<your secret access key>",
+                "bucket": "<your bucket name>"
+            }
+      }
     ]
   },
   "schema": false
