@@ -1,6 +1,6 @@
 {
   "name": "Snap-Shipper",
-  "version": "0.0.1rc0",
+  "version": "0.0.1rc3",
   "image": "excape/snap-shipper",
   "slug": "snapshipper",
   "description": "Ship those snapshots",
